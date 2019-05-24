@@ -1,0 +1,1 @@
+start .\bin\windows-amd64\grafana-server.exe
