@@ -64,7 +64,6 @@ debug.test
 /packaging/**/*.tar.gz
 
 # Ignore OSX indexing
-.DS_Store
 
 /vendor/**/*.py
 /vendor/**/*.xml
@@ -88,3 +87,5 @@ theOutput/
 
 # Ignore go local build dependencies
 /scripts/go/bin/**
+/out/
+/bin/

@@ -40,7 +40,7 @@ export function buildNavModel(dataSource: DataSourceSettings, plugin: GenericDat
       active: false,
       icon: 'fa fa-fw fa-th-large',
       id: `datasource-dashboards-${dataSource.id}`,
-      text: 'Dashboards',
+      text: 'Панели',
       url: `datasources/edit/${dataSource.id}/dashboards`,
     });
   }
@@ -50,7 +50,7 @@ export function buildNavModel(dataSource: DataSourceSettings, plugin: GenericDat
       active: false,
       icon: 'fa fa-fw fa-lock',
       id: `datasource-permissions-${dataSource.id}`,
-      text: 'Permissions',
+      text: 'Разрешения',
       url: `datasources/edit/${dataSource.id}/permissions`,
     });
   }

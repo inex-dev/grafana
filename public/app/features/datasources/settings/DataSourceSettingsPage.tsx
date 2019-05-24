@@ -199,7 +199,7 @@ export class DataSourceSettingsPage extends PureComponent<Props, State> {
 
     const node = {
       text: msg,
-      subTitle: 'Data Source Error',
+      subTitle: 'Ошибка источника данных',
       icon: 'fa fa-fw fa-warning',
     };
     const nav = {
@@ -214,11 +214,11 @@ export class DataSourceSettingsPage extends PureComponent<Props, State> {
             <div className="gf-form-button-row">
               {showDelete && (
                 <button type="submit" className="btn btn-danger" onClick={this.onDelete}>
-                  Delete
+                  Удалить
                 </button>
               )}
               <a className="btn btn-inverse" href="datasources">
-                Back
+                Назад
               </a>
             </div>
           </div>
@@ -239,7 +239,7 @@ export class DataSourceSettingsPage extends PureComponent<Props, State> {
       }
     }
 
-    return <div>Page Not Found: {page}</div>;
+    return <div>Страница не найдена: {page}</div>;
   }
 
   renderSettings() {

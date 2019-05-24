@@ -28,8 +28,8 @@ export class SignUpCtrl {
     $scope.navModel = {
       main: {
         icon: 'gicon gicon-branding',
-        text: 'Sign Up',
-        subTitle: 'Register your Grafana account',
+        text: 'Подписаться',
+        subTitle: 'Зарегистрируйте свой аккаунт Grafana',
         breadcrumbs: [{ title: 'Login', url: 'login' }],
       },
     };

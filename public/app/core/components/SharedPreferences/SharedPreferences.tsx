@@ -102,9 +102,9 @@ export class SharedPreferences extends PureComponent<Props, State> {
 
     return (
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
-        <h3 className="page-heading">Preferences</h3>
+        <h3 className="page-heading">Предпочтения</h3>
         <div className="gf-form">
-          <span className="gf-form-label width-11">UI Theme</span>
+          <span className="gf-form-label width-11">UI тема</span>
           <Select
             isSearchable={false}
             value={themes.find(item => item.value === theme)}
@@ -116,9 +116,9 @@ export class SharedPreferences extends PureComponent<Props, State> {
         <div className="gf-form">
           <FormLabel
             width={11}
-            tooltip="Not finding dashboard you want? Star it first, then it should appear in this select box."
+            tooltip="Не нашли панель, которую хотите? Сначала отметьте ее, затем она должна появиться в этом поле выбора."
           >
-            Home Dashboard
+            Главная панель
           </FormLabel>
           <Select
             value={dashboards.find(dashboard => dashboard.id === homeDashboardId)}
@@ -126,12 +126,12 @@ export class SharedPreferences extends PureComponent<Props, State> {
             getOptionLabel={i => i.title}
             onChange={(dashboard: DashboardSearchHit) => this.onHomeDashboardChanged(dashboard.id)}
             options={dashboards}
-            placeholder="Chose default dashboard"
+            placeholder="Выберите панель по умолчанию"
             width={20}
           />
         </div>
         <div className="gf-form">
-          <label className="gf-form-label width-11">Timezone</label>
+          <label className="gf-form-label width-11">Часовой пояс</label>
           <Select
             isSearchable={false}
             value={timezones.find(item => item.value === timezone)}
@@ -142,7 +142,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
         </div>
         <div className="gf-form-button-row">
           <button type="submit" className="btn btn-primary">
-            Save
+            Сохранить
           </button>
         </div>
       </form>

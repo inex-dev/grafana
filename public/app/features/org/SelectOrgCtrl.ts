@@ -9,8 +9,8 @@ export class SelectOrgCtrl {
     $scope.navModel = {
       main: {
         icon: 'gicon gicon-branding',
-        subTitle: 'Preferences',
-        text: 'Select active organization',
+        subTitle: 'Предпочтения',
+        text: 'Выберите активную организацию',
       },
     };
 

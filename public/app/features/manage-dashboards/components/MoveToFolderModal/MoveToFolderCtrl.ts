@@ -26,7 +26,7 @@ export class MoveToFolderCtrl {
       }
 
       if (result.totalCount === result.alreadyInFolderCount) {
-        appEvents.emit('alert-error', ['Error', `Dashboards already belongs to folder ${this.folder.title}`]);
+        appEvents.emit('alert-error', ['Error', `Панель уже принадлежит папке ${this.folder.title}`]);
       }
 
       this.dismiss();

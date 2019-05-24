@@ -144,7 +144,7 @@ class PluginPage extends PureComponent<Props, State> {
       // Check for the dashboard pages
       if (find(meta.includes, { type: 'dashboard' })) {
         pages.push({
-          text: 'Dashboards',
+          text: 'Панели',
           icon: 'gicon gicon-dashboard',
           url: path + '?page=' + PAGE_ID_DASHBOARDS,
           id: PAGE_ID_DASHBOARDS,

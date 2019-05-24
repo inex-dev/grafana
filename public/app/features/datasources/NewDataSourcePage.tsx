@@ -30,11 +30,11 @@ interface DataSourceCategoryInfo {
 class NewDataSourcePage extends PureComponent<Props> {
   searchInput: HTMLElement;
   categoryInfoList: DataSourceCategoryInfo[] = [
-    { id: 'tsdb', title: 'Time series databases' },
-    { id: 'logging', title: 'Logging & document databases' },
+    { id: 'tsdb', title: 'Базы данных временных рядов' },
+    { id: 'logging', title: 'База данных журналов и документов' },
     { id: 'sql', title: 'SQL' },
-    { id: 'cloud', title: 'Cloud' },
-    { id: 'other', title: 'Others' },
+    { id: 'cloud', title: 'Облако' },
+    { id: 'other', title: 'Прочее' },
   ];
 
   sortingRules: { [id: string]: number } = {
@@ -128,7 +128,7 @@ class NewDataSourcePage extends PureComponent<Props> {
             href="https://grafana.com/plugins?type=datasource&utm_source=new-data-source"
             target="_blank"
           >
-            Find more data source plugins on grafana.com
+            Найти больше плагинов источников данных на grafana.com
           </a>
         </div>
       </>
@@ -149,7 +149,7 @@ class NewDataSourcePage extends PureComponent<Props> {
                 inputClassName="gf-form-input width-30"
                 value={searchQuery}
                 onChange={this.onSearchQueryChange}
-                placeholder="Filter by name or type"
+                placeholder="Фильтр по имени или типу"
               />
             </div>
             <div className="page-action-bar__spacer" />
@@ -189,7 +189,7 @@ const DataSourceTypeCard: FC<DataSourceTypeCardProps> = props => {
       <div className="add-data-source-item-actions">
         {learnMoreLink && (
           <a className="btn btn-inverse" href={learnMoreLink} target="_blank" onClick={onLearnMoreClick}>
-            Learn more
+            Учить больше
           </a>
         )}
         <button className="btn btn-primary">Select</button>
@@ -202,9 +202,9 @@ export function getNavModel(): NavModel {
   const main = {
     icon: 'gicon gicon-add-datasources',
     id: 'datasource-new',
-    text: 'Add data source',
+    text: 'Добавить источник данных',
     href: 'datasources/new',
-    subTitle: 'Choose a data source type',
+    subTitle: 'Выберите тип источника данных',
   };
 
   return {
